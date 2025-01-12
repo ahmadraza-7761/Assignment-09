@@ -146,29 +146,26 @@
 
 // 14. Write a js program to calculate sum of digits of a number.
 
-// var num="123";
-// var length=num.length;
-// var i=0;
-// num=parseInt(num)
-// var sum=0;
-// while(i<=length){
-    
-//     var sum = num[i]+sum
-//     i++;
-//     console.log(sum)
-    
-// }
-// console.log(length)
-function sumOfDigits(num) {
-    let sum = 0; // Step 1: Initialize sum to 0
-    while (num > 0) {
-        sum += num % 10; // Step 3: Add the last digit to sum
-        num = Math.floor(num / 10); // Step 4: Remove the last digit
-    }
-    return sum; // Step 6: Return the sum of digits
-}
+// let number = 12; // You can change this to any number
+// let sum = 0;
 
-// Example usage:
-let number = 2050;
-let sum = sumOfDigits(number);
-console.log(`The sum of digits of ${number} is ${sum}`);
+// while (number > 0) {
+//   let digit = number % 10; // Get the last digit
+//   sum += digit;            // Add it to sum
+//   number = Math.floor(number / 10); // Remove the last digit
+// }
+
+// console.log("Sum of digits: " + sum);
+
+
+
+var num=123;
+var sum=0;
+
+while (num>0) {
+    var dig=num%10;
+    sum+=dig;
+    num=Math.floor(num % 10);
+}
+console.log(num)
+console.log(dig)
